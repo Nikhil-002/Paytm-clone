@@ -14,7 +14,7 @@ export default function Signin() {
     const navigate = useNavigate();
 
     const handleSignIn = async() => {
-        const response = await axios.post("http://localhost:3000/api/v1/user/signin", {
+        const response = await axios.post("https://paytm-clone-server.vercel.app/signin", {
             username,
             password
         })
