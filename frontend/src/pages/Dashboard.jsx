@@ -11,7 +11,7 @@ export default function Dashboard() {
     const {username} = location.state || {}
     
     useEffect(() => {
-        axios.get("http://localhost:3000/api/v1/account/balance", {
+        axios.get("https://paytm-clone-server.vercel.app/api/v1/account/balance", {
             headers : {
                 Authorization : "Bearer " + localStorage.getItem("token")
             }
